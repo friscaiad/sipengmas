@@ -16,4 +16,8 @@ class Pegawai extends Model
         return $this->belongsToMany(Pengmas::class, 'daftar_pengmas', 'nip', 'pengmas_id')
         ->withPivot('ketua');
     }
+
+    public function role(){
+        return $this->belongsTo(Role::class);
+    }
 }
