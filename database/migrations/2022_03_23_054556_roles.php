@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Pegawai extends Migration
+class Roles extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class Pegawai extends Migration
      */
     public function up()
     {
-        Schema::create('pegawai', function (Blueprint $table) {
-            $table->string('nip', 50);
-            $table->string('nama_lengkap', 255);
-            $table->primary('nip');
-            $table->foreignId('roles_id')->constrained('roles');
+        Schema::create('roles', function (Blueprint $table) {
+            $table->id();
+            $table->string('tipe', 255);
         });
     }
 
@@ -28,6 +26,6 @@ class Pegawai extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pegawai');
+        Schema::dropIfExists('roles');
     }
 }

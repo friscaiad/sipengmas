@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         $j = new JenjangSeeder();
         $pers = new PeriodeSeeder();
         $s = new SkemaSeeder();
+        $r = new RoleSeeder();
         $pes = new PegawaiSeeder();
         $pens = new PengmasSeeder();
         $dps = new DaftarPengmasSeeder();
@@ -29,6 +30,7 @@ class DatabaseSeeder extends Seeder
         $j->run();
         $pers->run();
         $s->run();
+        $r->run();
         $pes->run();
         $pens->run();
         $dps->run();
