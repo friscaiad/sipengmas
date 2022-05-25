@@ -22,8 +22,8 @@
               <div class="col-md-6 col-lg-7 d-flex align-items-center">
                 <div class="card-body p-4 p-lg-5 text-black">
   
-                  <form>
-  
+                  <form action="/login" method="POST">
+                    @csrf
                     <div class="d-flex align-items-center mb-3 pb-1">
                       <span class="h1 fw-bold mb-0 text-secondary">SI</span>
                       <span class="h1 fw-bold mb-0 text-primary">ABDI</span>
@@ -32,17 +32,25 @@
                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Login</h5>
   
                     <div class="form-outline mb-4">
-                      <input type="email" id="form2Example17" class="form-control form-control-lg" name="email"/>
                       <label class="form-label" for="email">Email address</label>
+                      <input type="email" name="email" 
+                      class="form-control form-control-lg @error('email') is-invalid
+                      @enderror"  required value="{{ old('email') }}"/>
+                      @error('email')
+                        <div class="invalid-feedback">
+                          {{ $message }}
+                        </div>
+                      @enderror
                     </div>
   
                     <div class="form-outline mb-4">
-                      <input type="password" id="form2Example27" class="form-control form-control-lg" name="pwd" />
                       <label class="form-label" for="pwd">Password</label>
+                      <input type="password" name="pwd"
+                      class="form-control form-control-lg" required/>
                     </div>
   
                     <div class="pt-1 mb-4">
-                      <button class="btn btn-primary btn-lg btn-block" type="button">Login</button>
+                      <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
                     </div>
   
                     <a class="small text-muted" href="#!">Forgot password?</a>
