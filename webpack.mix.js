@@ -12,7 +12,11 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .js('resources/js/bs.js', 'public/js')
+    .js('resources/js/jquery.js', 'public/js')
     .sass('resources/css/bs.scss', 'public/css')
     .copy('resources/css/style.css', 'public/css')
+    .copy('resources/css/jtoast.css', 'public/css')
+    .copy('resources/js/jtoast.js', 'public/js')
     .copyDirectory('resources/images', 'public/images')
     
