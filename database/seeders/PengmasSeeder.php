@@ -21,8 +21,7 @@ class PengmasSeeder extends Seeder
                 'prodi_id' => 3,
                 'departemen_id' => 1,
                 'periode_id' => 1,
-                'skema_id' => 1,
-                'jenjang_id' => 2,
+                'skema_id' => 1
             ],
             [
                 'dana' => 15000.00,
@@ -30,8 +29,7 @@ class PengmasSeeder extends Seeder
                 'prodi_id' => 3,
                 'departemen_id' => 1,
                 'periode_id' => 1,
-                'skema_id' => 1,
-                'jenjang_id' => 2,
+                'skema_id' => 1
             ],
             [
                 'dana' => 15000.00,
@@ -39,8 +37,7 @@ class PengmasSeeder extends Seeder
                 'prodi_id' => 1,
                 'departemen_id' => 1,
                 'periode_id' => 1,
-                'skema_id' => 1,
-                'jenjang_id' => 2,
+                'skema_id' => 1
             ],
             [
                 'dana' => 15000.00,
@@ -48,8 +45,7 @@ class PengmasSeeder extends Seeder
                 'prodi_id' => 9,
                 'departemen_id' => 4,
                 'periode_id' => 1,
-                'skema_id' => 1,
-                'jenjang_id' => 2,
+                'skema_id' => 1
             ],
             [
                 'dana' => 15000.00,
@@ -57,8 +53,7 @@ class PengmasSeeder extends Seeder
                 'prodi_id' => 4,
                 'departemen_id' => 2,
                 'periode_id' => 1,
-                'skema_id' => 1,
-                'jenjang_id' => 2,
+                'skema_id' => 1
             ],
         ]);
     }
