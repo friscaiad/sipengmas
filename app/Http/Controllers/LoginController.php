@@ -16,7 +16,7 @@ class LoginController extends Controller
     {
         $cred = $r->validate([
             'email' => 'required|email:dns',
-            'pwd' => 'required'
+            'password' => 'required'
         ]);
 
         if(Auth::attempt($cred)) {
