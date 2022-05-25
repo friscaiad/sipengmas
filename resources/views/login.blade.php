@@ -44,8 +44,8 @@
                     </div>
   
                     <div class="form-outline mb-4">
-                      <label class="form-label" for="pwd">Password</label>
-                      <input type="password" name="pwd"
+                      <label class="form-label" for="password">Password</label>
+                      <input type="password" name="password"
                       class="form-control form-control-lg" required/>
                     </div>
   
