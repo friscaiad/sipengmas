@@ -17,7 +17,7 @@ class Pegawai extends Migration
             $table->string('nip', 50);
             $table->string('nama_lengkap', 255);
             $table->primary('nip');
-            $table->foreignId('roles_id')->constrained('roles');
+            $table->foreignId('role_id')->constrained('roles');
         });
     }
 
