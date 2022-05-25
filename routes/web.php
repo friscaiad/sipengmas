@@ -17,10 +17,10 @@ use App\Http\Controllers\TampilkanPengmasController;
 
 Route::get('/', function () {
     return view('landingpage');
-})->middleware('guest');
+});
 
 Route::get("/login", [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post("/login", [LoginController::class, 'authenticate'])->middleware('guest');
 
-Route::get('/data', [TampilkanPengmasController::class, 'index'])->middleware('auth');
+Route::get('/data', [TampilkanPengmasController::class, 'index'])->name('data')->middleware('auth');
 Route::post('/data/filter', [TampilkanPengmasController::class, 'filter'])->middleware('auth');
