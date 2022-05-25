@@ -173,7 +173,7 @@
 .parallax {
 
     height: 350px;
-    background-image: linear-gradient(rgba(10, 9, 9, 0.9),rgba(10, 9, 9, 0.5)),url("../image/home/home1.png");
+    background-image: linear-gradient(rgba(10, 9, 9, 0.9),rgba(10, 9, 9, 0.5)),url("../images/home/home1.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
