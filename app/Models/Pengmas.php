@@ -8,11 +8,6 @@ class Pengmas extends Model
 {
     protected $table = 'pengmas';
     public $timestamps = false;
-    
-    public function jenjang()
-    {
-        return $this->belongsTo(Jenjang::class);
-    }
 
     public function periode()
     {

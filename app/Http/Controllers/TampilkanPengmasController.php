@@ -6,7 +6,6 @@ use App\Models\Departemen;
 use App\Models\Periode;
 use App\Models\Prodi;
 use App\Models\Pengmas;
-use App\Models\Jenjang;
 use App\Models\Skema;
 use Illuminate\Http\Request;
 use \Illuminate\Support\Collection;
@@ -16,24 +15,21 @@ class TampilkanPengmasController extends Controller
     public function index(Request $request) {
         $prodi = Prodi::all();
         $periode = Periode::all();
-        $jenjang = Jenjang::all();
         $dep = Departemen::all();
         $skema = Skema::all();
         $pengmas = empty(session()->get('pengmas')) ?
-        Pengmas::with(['jenjang', 'periode', 
-        'prodi', 'ketua', 'anggota', 'departemen', 'skema'])
+        Pengmas::with(['periode', 'prodi', 'ketua', 
+        'anggota', 'departemen', 'skema'])
         ->get() : session()->get('pengmas');
 
         $prodi = $this->checkboxHelper($prodi, $request->old("prodi"), "nama_prodi");
         $periode = $this->checkboxHelper($periode, $request->old("periode"), "tahun");
-        $jenjang = $this->checkboxHelper($jenjang, $request->old("jenjang"), "nama_jenjang");
         $dep = $this->checkboxHelper($dep, $request->old("departemen"), "nama_departemen");
         $skema = $this->checkboxHelper($skema, $request->old("skema"), "nama_skema");
 
         return view('data', [
             'prodi' => $prodi,
             'periode' => $periode,
-            'jenjang' => $jenjang,
             'departemen' => $dep,
             'skema' => $skema,
             'pengmas' => $pengmas,
@@ -44,7 +40,6 @@ class TampilkanPengmasController extends Controller
         $search = $r->input('search');
         $periode = $r->input('periode');
         $prodi = $r->input('prodi');
-        $jenjang = $r->input('jenjang');
         $skema = $r->input('skema');
         $departemen = $r->input('departemen');
 
@@ -64,10 +59,6 @@ class TampilkanPengmasController extends Controller
 
             if(!empty($prodi)) {
                 $filteredPengmas->where('prodi_id', $prodi);
-            }
-
-            if(!empty($jenjang)) {
-                $filteredPengmas->where('jenjang_id', $jenjang);
             }
 
             if(!empty($skema)) {

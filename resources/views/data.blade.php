@@ -128,22 +128,6 @@
           </div>
         @endforeach
         <div class="text-dark ml-2 mt-2">
-            <h6>Jenjang</h6>
-        </div>
-        @foreach ($jenjang as $j)
-          <div class="form-check ml-5">
-            <input 
-            class="form-check-input" 
-            name="jenjang[]" type="checkbox" 
-            value="{{ $j['id'] }}" 
-            id="flexCheckDefault"
-            {{ $j['checked'] ? 'checked' : '' }}>
-            <label class="form-check-label" for="jenjang[]">
-                {{ $j['nama_jenjang'] }}
-            </label>
-          </div>
-        @endforeach
-        <div class="text-dark ml-2 mt-2">
           <h6>Skema</h6>
         </div>
         @foreach ($skema as $s)
