@@ -15,14 +15,14 @@ class LoginController extends Controller
     public function authenticate(Request $r)
     {
         $cred = $r->validate([
-            'email' => 'required|email:dns',
+            'email' => 'required|email',
             'password' => 'required'
         ]);
 
         if(Auth::attempt($cred)) {
             $r->session()->regenerate();
 
-            return redirect()->intended('data');
+            return redirect()->intended('/data');
         }
 
         return back()->with('loginError', 'invalid credentials');
