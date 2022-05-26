@@ -3,8 +3,13 @@
     height: 100%;
     position: fixed;
     z-index: 99999;
-    background-color: white;
-    overflow: hidden;
+    background: hsla(224, 100%, 17%, 1);
+    background: linear-gradient(90deg, hsla(224, 100%, 17%, 1) 0%, hsla(42, 93%, 95%, 1) 84%, hsla(187, 55%, 71%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(224, 100%, 17%, 1) 0%, hsla(42, 93%, 95%, 1) 84%, hsla(187, 55%, 71%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(224, 100%, 17%, 1) 0%, hsla(42, 93%, 95%, 1) 84%, hsla(187, 55%, 71%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#001858", endColorstr="#FEF6E4", GradientType=1 );
+    /*background:rgb(208,158,186) ;
+    /* background: radial-gradient(circle, rgba(0,56,153,1) 11%, rgba(7,61,149,1) 13%, rgba(229,205,23,1) 83%); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,11 +44,7 @@
         transform: scale(1) rotate(360deg);
     }
 }
-#carouselExampleCaptions {
-    width: 55%;
-    margin: auto;
-    padding-top: 2em;
-}
+
 .navbar{
     display: flex;
     flex-wrap: wrap; 
@@ -56,6 +57,7 @@
     color: inherit; /*Inherits the same color as the parent element or grandparent (the body) unless you set the color to the navbar.*/
 }
 .container1 {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
     background-color: #fff;
 }
 .logo{
@@ -67,9 +69,6 @@
     gap: 25px; 
     margin-right: 120px;
     padding-top: 10px;
-}
-.carousel {
-    padding-top: 4em;
 }
 #toggler,
 .navbar label{
@@ -101,12 +100,75 @@
         max-height: 100%;
     }
 }
-.siabdi {
-    padding-top: 4em;
+.text{
+    color: #E5CD17;
 }
-.background {
-    background-color: #ffff
-    ;
+.img{
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.container3 {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjMiIGhlaWdodD0iMTY3IiB2aWV3Qm94PSIwIDAgMTYzIDE2NyI+CiAgICA8Y2lyY2xlIGN4PSIxMjEiIGN5PSI1NSIgcj0iMTEyIiBmaWxsPSIjRDFEM0ZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03MCkiLz4KPC9zdmc+Cg==), 
+    url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTM0IiBoZWlnaHQ9IjIyNCIgdmlld0JveD0iMCAwIDEzNCAyMjQiPgogICAgPGRlZnM+CiAgICAgICAgPGNpcmNsZSBpZD0icHJlZml4X19hIiBjeD0iMTEyIiBjeT0iMTEyIiByPSIxMTIiLz4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHVzZSBmaWxsPSIjRDFEM0ZGIiB4bGluazpocmVmPSIjcHJlZml4X19hIi8+CiAgICA8L2c+Cjwvc3ZnPgo=),
+    url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjUiIGhlaWdodD0iMzA0IiB2aWV3Qm94PSIwIDAgMjY1IDMwNCI+CiAgICA8Y2lyY2xlIGN4PSIxMzQiIGN5PSI2MDMiIHI9IjIwMSIgZmlsbD0iI0QxRDNGRiIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzAgLTQwMikiLz4KPC9zdmc+Cg==);
+    background-repeat: no-repeat;
+    background-position: 0 0,top 20% right,0 100%;
+    background-color: #dbddff;
+    border-radius: 24px;
+    padding: 80px 100px;
+}
+.berita-pengmas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.course-card {
+    width: 100%;
+    margin-top: 60px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+.course-card .badge {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    font-family: GilroySemiBold;
+    background-color: #202d50;
+    color: #fff;
+    padding: 7px 15px;
+    border-bottom-right-radius: 16px;
+}
+.heading .duration {
+    width: 25%;
+    text-align: center;
+    align-self: center;
+    font-size: 14px;
+    font-family: GilroyRegular;
+    color: #384670;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#Berita{
+    scroll-behavior: smooth;
+}
+.dokumentasi-1{
+    box-shadow: 10px -11px 5px -3px rgba(212,210,210,0.91);
+    -webkit-box-shadow: 10px -11px 5px -3px rgba(212,210,210,0.91);
+    -moz-box-shadow: 10px -11px 5px -3px rgba(212,210,210,0.91);
+}
+#dokumen{
+    scroll-behavior: smooth;
 }
 .parallax {
 
@@ -121,6 +183,9 @@
 	color: white;
 	padding-top:  50px;
 	margin-top: 2em;
+}
+#contact{
+    scroll-behavior: smooth;
 }
 .row {
     display: flex;
@@ -175,4 +240,7 @@
     flex:0 0 100%;
     max-width: 100%;
     text-align: center;
+}
+.footer{
+    padding-top: 12em;
 }

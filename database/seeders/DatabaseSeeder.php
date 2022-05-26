@@ -16,7 +16,6 @@ class DatabaseSeeder extends Seeder
         $p = new ProdiSeeder();
         $d = new DepartemenSeeder();
         $dp = new DepartemenProdiSeeder();
-        $j = new JenjangSeeder();
         $pers = new PeriodeSeeder();
         $s = new SkemaSeeder();
         $r = new RoleSeeder();
@@ -27,7 +26,6 @@ class DatabaseSeeder extends Seeder
         $p->run();
         $d->run();
         $dp->run();
-        $j->run();
         $pers->run();
         $s->run();
         $r->run();

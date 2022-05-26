@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/> 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">  
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <style>
         body {
@@ -28,76 +28,192 @@
 
     <section>
         <nav class="navbar fixed-top container1">
-            <img class="float-left img-fluid logo" src="images/home/SIABDI.jpg" width="90-px" ><a href="landingpage"></a></img>
+            <img class="float-left img-fluid logo" src="{{ asset('images/home/SIABDI.jpg') }}" width="90-px" ><a href=" landingpage"></a></img>
+            <!-- The order that we place the checkbox and label here is important because we will use css only for the click event to open the menu on mobile. -->
             <input type="checkbox" id="toggler">
             <label for="toggler"><i class="ri-menu-line"></i></label>
             <div class="menu">
               <ul class="list">
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#Berita">Berita</a></li>
+                <li><a href="#dokumen">Dokumentasi</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="{{ url('/data') }}">Data</a></li>
+                <li><a href="{{ url("/login") }}">Login</a></li>
               </ul>
             </div>
           </nav>
     </section>
 
-    <div class="background-image position-relative overflow-hidden">
-        <div class="position-absolute">
-            <img src="images/home/bg1.jpg" width="126%" alt="">
-        </div>
+    <header style="padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(5, 67, 94, 0), rgba(5, 67, 94, 0.83));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;">
 
-    <section id="about" class="carousel">
-    <div class="container position-relative">
-        <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+            <div class="siabdi">
+                <h3 class="text"><b> Hallo, Selamat Datang!</b></h3>
+                <img src="{{ asset('images/home/SIABDI.png') }}" width="25%" alt="">
+                <h4 class="pt-4" >SIABDI adalah sebuah sistem informasi yang memuat seluruh data pengabdian masyarakat yang telah dilakukan oleh sivitas akademika Politeknik Elektronika Negeri Surabaya. SIABDI bertujuan untuk mempermudah dan mempercepat proses pengelolaan data oleh dosen juga P3M PENS</h4>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/home/banner3.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/home/banner5.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/home/banner2.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        </div>
+        <div class="col-6">
+          <img src="{{ asset('images/home/images.jpg') }}" class="img" 
+          style=" box-sizing= border-box; background-color:rgba(11, 114, 158, 0.83); border= none; padding: 20px;" alt="">
+        </div>
+      </div>
     </div>
-</div>
+     
+  </header> 
+    <section id="Berita">
+      <div class="container3">
+        <h3><b> Berita Seputar Pengmas </b></h3>
+        <p> Dapatkan berita terupdate dibawah ini </p>
+        <div class="row berita-pengmas">
+          <div class="col-md-4">
+            <figure class="course-card figure">
+              <img id="img-design" src="{{ asset('images/home/berita1.png') }}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <div class="badge">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
+                "Most Popular"
+              </div>
+              <figcaption class="figure-caption">
+                <div class="heading">
+                  <div class="name">Berita 1</div>
+                  <div class="duration">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0VGRjRGNyIgZD0iTTE3LjYgMTAuNWMwIDMuODY2LTMuMTM0IDctNyA3cy03LTMuMTM0LTctNyAzLjEzNC03IDctNyA3IDMuMTM0IDcgNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS40IDEuNSkiLz4KICAgICAgICA8cGF0aCBzdHJva2U9IiMyMDJENTAiIGQ9Ik0xNi41IDguNWMwIDQuNDE4LTMuNTgyIDgtOCA4cy04LTMuNTgyLTgtOCAzLjU4Mi04IDgtOCA4IDMuNTgyIDggOHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICAgICAgPHBhdGggc3Ryb2tlPSIjMjAyRDUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik04LjUgNC41TDguNSA4LjUgMTIuNSA4LjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="clock" class=""> 33 Mins</div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel ratione at eum molestiae perferendis nobis. Hic dolorum, libero earum sunt error, odio non optio quaerat reiciendis eius vel aliquid.</p>
+                </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="course-card figure">
+              <img id="img-design" src="{{ asset('images/home/berita1.png') }}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <div class="badge">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
+                "Most Popular"
+              </div>
+              <figcaption class="figure-caption">
+                <div class="heading">
+                  <div class="name">Berita 1</div>
+                  <div class="duration">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0VGRjRGNyIgZD0iTTE3LjYgMTAuNWMwIDMuODY2LTMuMTM0IDctNyA3cy03LTMuMTM0LTctNyAzLjEzNC03IDctNyA3IDMuMTM0IDcgNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS40IDEuNSkiLz4KICAgICAgICA8cGF0aCBzdHJva2U9IiMyMDJENTAiIGQ9Ik0xNi41IDguNWMwIDQuNDE4LTMuNTgyIDgtOCA4cy04LTMuNTgyLTgtOCAzLjU4Mi04IDgtOCA4IDMuNTgyIDggOHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICAgICAgPHBhdGggc3Ryb2tlPSIjMjAyRDUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik04LjUgNC41TDguNSA4LjUgMTIuNSA4LjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="clock" class=""> 33 Mins</div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni id voluptatibus placeat vero obcaecati incidunt necessitatibus vel earum, neque, non odit distinctio odio quod doloremque sunt, alias animi quis?</p>
+                </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="course-card figure">
+              <img id="img-design" src="{{asset('images/home/berita1.png')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <div class="badge">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
+                "Most Popular"
+              </div>
+              <figcaption class="figure-caption">
+                <div class="heading">
+                  <div class="name">Berita 1</div>
+                  <div class="duration">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0VGRjRGNyIgZD0iTTE3LjYgMTAuNWMwIDMuODY2LTMuMTM0IDctNyA3cy03LTMuMTM0LTctNyAzLjEzNC03IDctNyA3IDMuMTM0IDcgNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS40IDEuNSkiLz4KICAgICAgICA8cGF0aCBzdHJva2U9IiMyMDJENTAiIGQ9Ik0xNi41IDguNWMwIDQuNDE4LTMuNTgyIDgtOCA4cy04LTMuNTgyLTgtOCAzLjU4Mi04IDgtOCA4IDMuNTgyIDggOHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICAgICAgPHBhdGggc3Ryb2tlPSIjMjAyRDUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik04LjUgNC41TDguNSA4LjUgMTIuNSA4LjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="clock" class=""> 33 Mins</div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt necessitatibus velit facilis commodi qui maiores nihil, pariatur, laborum eligendi aliquid repellat delectus iusto neque aliquam! Enim, rem. Accusamus, quod hic?</p>
+                </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="course-card figure">
+              <img id="img-design" src="{{asset('images/home/berita1.png')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <div class="badge">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
+                "Most Popular"
+              </div>
+              <figcaption class="figure-caption">
+                <div class="heading">
+                  <div class="name">Berita 1</div>
+                  <div class="duration">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0VGRjRGNyIgZD0iTTE3LjYgMTAuNWMwIDMuODY2LTMuMTM0IDctNyA3cy03LTMuMTM0LTctNyAzLjEzNC03IDctNyA3IDMuMTM0IDcgNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS40IDEuNSkiLz4KICAgICAgICA8cGF0aCBzdHJva2U9IiMyMDJENTAiIGQ9Ik0xNi41IDguNWMwIDQuNDE4LTMuNTgyIDgtOCA4cy04LTMuNTgyLTgtOCAzLjU4Mi04IDgtOCA4IDMuNTgyIDggOHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICAgICAgPHBhdGggc3Ryb2tlPSIjMjAyRDUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik04LjUgNC41TDguNSA4LjUgMTIuNSA4LjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="clock" class=""> 33 Mins</div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illo, molestias praesentium odio distinctio fugit magni ullam at consequuntur blanditiis eum quia, nostrum, quo et omnis molestiae delectus inventore laborum!</p>
+                </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure class="course-card figure">
+              <img id="img-design" src="{{asset('images/home/berita1.png')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <div class="badge">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
+                "Most Popular"
+              </div>
+              <figcaption class="figure-caption">
+                <div class="heading">
+                  <div class="name">Berita 1</div>
+                  <div class="duration">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0VGRjRGNyIgZD0iTTE3LjYgMTAuNWMwIDMuODY2LTMuMTM0IDctNyA3cy03LTMuMTM0LTctNyAzLjEzNC03IDctNyA3IDMuMTM0IDcgNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS40IDEuNSkiLz4KICAgICAgICA8cGF0aCBzdHJva2U9IiMyMDJENTAiIGQ9Ik0xNi41IDguNWMwIDQuNDE4LTMuNTgyIDgtOCA4cy04LTMuNTgyLTgtOCAzLjU4Mi04IDgtOCA4IDMuNTgyIDggOHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICAgICAgPHBhdGggc3Ryb2tlPSIjMjAyRDUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik04LjUgNC41TDguNSA4LjUgMTIuNSA4LjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="clock" class=""> 33 Mins</div>
+                  </div>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias beatae a saepe doloribus vitae corrupti laborum molestiae porro quas, itaque nobis exercitationem earum harum quos neque similique necessitatibus, atque voluptate.</p>
+                </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="background">
-        <div class="container pb-4">
-            <div class="siabdi">
-                <img src="images/home/SIABDI.jpg" width="15%" alt="">
-                <h4 class="pt-4" ><b>Semua data pengabdian masyarakat ada dalam satu aplikasi <br></b></h4>
-                <h4 align=”center”>SIABDI adalah sebuah sistem informasi yang memuat seluruh data pengabdian masyarakat yang telah dilakukan oleh sivitas akademika Politeknik Elektronika Negeri Surabaya. SIABDI bertujuan untuk mempermudah dan mempercepat proses pengelolaan data oleh dosen juga P3M PENS</h4>
+    <section>
+      <div class="container">
+        <h1 id="dokumen" class="text-center pt-3"><b>DOKUMENTASI</b></h1>
+        <div class="row pt-4">
+          <div class="col-md-4">
+            <div class="dokumentasi-1">
+              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="dokumentasi-1">
+              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="dokumentasi-1">
+              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="dokumentasi-1">
+              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="dokumentasi-1">
+              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="dokumentasi-1">
+              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section>
         <div class="container">
-            <div class="parallax">
-                <p>Dokumentasi 2018</p>
-            </div>
+            <div class="parallax"></div>
         </div>
     </section>
 
-
-    <section id="contact" class="pt-5">
+    <footer style="background-image: url('images/home/bg2.jpg');
+    background-color: #fff;
+     height: auto; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;"> 
+    <section id="contact" class="footer text-white ">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -123,12 +239,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        
-    
     </section>
-     <script src="{{ asset('js/app.js') }}"></script>
-
+  </footer>
+     <!-- Optional JavaScript; choose one of the two! -->
+    <script src="{{ asset('js/app.js') }}"></script>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>

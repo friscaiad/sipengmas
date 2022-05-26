@@ -22,7 +22,6 @@ class Pengmas extends Migration
             $table->foreignId('departemen_id')->constrained('departemen');
             $table->foreignId('periode_id')->constrained('periode');
             $table->foreignId('skema_id')->constrained('skema');
-            $table->foreignId('jenjang_id')->constrained('jenjang');
             $table->fullText('judul');
         });
     }
