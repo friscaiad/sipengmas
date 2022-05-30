@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TampilkanPengmasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('landingpage');
 });
+
+Route::get("/login", [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post("/login", [LoginController::class, 'authenticate'])->middleware('guest');
+
+Route::get('/data', [TampilkanPengmasController::class, 'index'])->middleware('auth');
+Route::post('/data/filter', [TampilkanPengmasController::class, 'filter'])->middleware('auth');

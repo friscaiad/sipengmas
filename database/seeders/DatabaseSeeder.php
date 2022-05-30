@@ -13,6 +13,24 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $p = new ProdiSeeder();
+        $d = new DepartemenSeeder();
+        $dp = new DepartemenProdiSeeder();
+        $pers = new PeriodeSeeder();
+        $s = new SkemaSeeder();
+        $r = new RoleSeeder();
+        $pes = new PegawaiSeeder();
+        $pens = new PengmasSeeder();
+        $dps = new DaftarPengmasSeeder();
+
+        $p->run();
+        $d->run();
+        $dp->run();
+        $pers->run();
+        $s->run();
+        $r->run();
+        $pes->run();
+        $pens->run();
+        $dps->run();
     }
 }

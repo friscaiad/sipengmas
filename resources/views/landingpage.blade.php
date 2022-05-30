@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="{{ asset('css/bs.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/> 
@@ -28,7 +28,7 @@
 
     <section>
         <nav class="navbar fixed-top container1">
-            <img class="float-left img-fluid logo" src="image/home/SIABDI.png" width="90-px" ><a href=" landingpage"></a></img>
+            <img class="float-left img-fluid logo" src="{{ asset('images/home/SIABDI.jpg') }}" width="90-px" ><a href=" landingpage"></a></img>
             <!-- The order that we place the checkbox and label here is important because we will use css only for the click event to open the menu on mobile. -->
             <input type="checkbox" id="toggler">
             <label for="toggler"><i class="ri-menu-line"></i></label>
@@ -38,7 +38,7 @@
                 <li><a href="#Berita">Berita</a></li>
                 <li><a href="#dokumen">Dokumentasi</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="">Login</a></li>
+                <li><a href="{{ url("/login") }}">Login</a></li>
               </ul>
             </div>
           </nav>
@@ -53,15 +53,16 @@
     background-size: cover;">
 
     <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-6 ">
+      <div class="row">
+        <div class="col-6">
             <div class="siabdi">
-                <h3 class=""><b> Hallo, Selamat Datang!</b></h3>
-                <h4 class="pt-4 text"  >SIABDI adalah sebuah sistem informasi yang memuat seluruh data pengabdian masyarakat yang telah dilakukan oleh sivitas akademika Politeknik Elektronika Negeri Surabaya. SIABDI bertujuan untuk mempermudah dan mempercepat proses pengelolaan data oleh dosen juga P3M PENS</h4>
+                <h3 class="text"><b> Hallo, Selamat Datang!</b></h3>
+                <img src="{{ asset('images/home/SIABDI.png') }}" width="25%" alt="">
+                <h4 class="pt-4" >SIABDI adalah sebuah sistem informasi yang memuat seluruh data pengabdian masyarakat yang telah dilakukan oleh sivitas akademika Politeknik Elektronika Negeri Surabaya. SIABDI bertujuan untuk mempermudah dan mempercepat proses pengelolaan data oleh dosen juga P3M PENS</h4>
             </div>
         </div>
         <div class="col-6">
-          <img src="image/home/images.jpg" class="img" 
+          <img src="{{ asset('images/home/images.jpg') }}" class="img" 
           style=" box-sizing= border-box; background-color:rgba(11, 114, 158, 0.83); border= none; padding: 20px;" alt="">
         </div>
       </div>
@@ -75,7 +76,7 @@
         <div class="row berita-pengmas">
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="image/home/berita1.png" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="{{ asset('images/home/berita1.png') }}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
@@ -92,7 +93,7 @@
           </div>
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="image/home/berita1.png" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="{{ asset('images/home/berita1.png') }}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
@@ -109,7 +110,7 @@
           </div>
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="image/home/berita1.png" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="{{asset('images/home/berita1.png')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
@@ -126,7 +127,7 @@
           </div>
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="image/home/berita1.png" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="{{asset('images/home/berita1.png')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
@@ -143,7 +144,7 @@
           </div>
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="image/home/berita1.png" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="{{asset('images/home/berita1.png')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
@@ -168,32 +169,32 @@
         <div class="row pt-4">
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="image/home/banner1.jpg" width="100%" alt="">
+              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="image/home/banner1.jpg" width="100%" alt="">
+              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="image/home/banner1.jpg" width="100%" alt="">
+              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="image/home/banner1.jpg" width="100%" alt="">
+              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="image/home/banner1.jpg" width="100%" alt="">
+              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="image/home/banner1.jpg" width="100%" alt="">
+              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
             </div>
           </div>
         </div>
@@ -206,7 +207,7 @@
         </div>
     </section>
 
-    <footer style="background-image: url('image/home/bg2.jpg');
+    <footer style="background-image: url('images/home/bg2.jpg');
     background-color: #fff;
      height: auto; 
     background-position: center; /* Center the image */
@@ -241,15 +242,7 @@
     </section>
   </footer>
      <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    
+    <script src="{{ asset('js/app.js') }}"></script>
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
