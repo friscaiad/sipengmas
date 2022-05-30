@@ -14,7 +14,7 @@ class SkemaSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('Skema')->insert([
+        DB::table('skema')->insert([
             ['nama_skema' => 'lokal'],
             ['nama_skema' => 'nasional'],
             ['nama_skema' => 'internasional'],
