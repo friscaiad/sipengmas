@@ -38,7 +38,7 @@
                 <li><a href="#Berita">Berita</a></li>
                 <li><a href="#dokumen">Dokumentasi</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="{{ url("/login") }}">Login</a></li>
+                <li><a href="{{ url('/login') }}">Login</a></li>
               </ul>
             </div>
           </nav>
