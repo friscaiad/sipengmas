@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-sm sticky-top bg-primary" style="position: fixed; width: 100%; z-index: 100 margin-left: 3px; margin-right: 3px">
         <div class="container-fluid">
             <a href="#" class="navbar-brand text-white">
-                <span class="text-secondary"><b>SI</b></span><span><b>ABDI</b></span>
+                <img src="{{ asset('images/siabdilogo.png') }}" alt="SIABDI">
                 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
