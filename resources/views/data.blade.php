@@ -24,6 +24,7 @@
                                 <th scope="col">Anggota</th>
                                 <th scope="col">Periode</th>
                                 <th scope="col">Dana</th>
+                                <th scope="col">Download SK</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -43,6 +44,9 @@
                                     </th>
                                     <th>{{ $p->periode->tahun }}</th>
                                     <th>{{ $p->dana }}</th>
+                                    <th>
+                                        <i class="bi bi-arrow-down-circle-fill"></i>    
+                                    </th>
                                 </tr>
                             @endforeach
                         </tbody>
