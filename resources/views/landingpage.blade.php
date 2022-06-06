@@ -38,7 +38,7 @@
                 <li><a href="#Berita">Berita</a></li>
                 <li><a href="#dokumen">Dokumentasi</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="{{ url('/login') }}">Login</a></li>
+                <li><button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Mymodal">Login</button></li>
               </ul>
             </div>
           </nav>
@@ -241,8 +241,32 @@
                 </div>
     </section>
   </footer>
+
+<div class="modal" id="Mymodal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-secondary d-block mb-2 w-100">
+        <i class="bi bi-person-check-fill"></i>
+        P3M
+        </button>
+        <button type="button" class="btn btn-primary d-block mb-2 w-100">
+        <i class="bi bi-person-fill"></i>
+        Dosen
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
      <!-- Optional JavaScript; choose one of the two! -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/bs.js') }}"></script>
+    <script src="{{ asset('js/jquery.js') }}"></script>
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
