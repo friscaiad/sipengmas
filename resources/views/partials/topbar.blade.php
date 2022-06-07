@@ -4,8 +4,7 @@
     }
 
     .dropdown-menu.show {
-        position: absolute;
-        left: -125px;
+        left: -100px;
     }
 </style>
 
@@ -39,7 +38,8 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <li>
                                     <form action="{{ url('/logout') }}" method="post">
-                                        
+                                        @csrf
+                                        <button type="submit" class="dropdown-item">Logout</button>
                                     </form>
                                 </li>
                             </ul>
