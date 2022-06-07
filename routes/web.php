@@ -21,6 +21,7 @@ Route::get('/', function () {
 
 Route::get("/login", [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post("/login", [LoginController::class, 'authenticate'])->middleware('guest');
+Route::post("/logout", [LoginController::class, 'logout'])->middleware('auth');
 
 Route::get('/data', [TampilkanPengmasController::class, 'index'])->middleware('auth');
 Route::post('/data/filter', [TampilkanPengmasController::class, 'filter'])->middleware('auth');

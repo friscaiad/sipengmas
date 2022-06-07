@@ -38,7 +38,7 @@
                 <li><a href="#Berita">Berita</a></li>
                 <li><a href="#dokumen">Dokumentasi</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="{{ url("/login") }}">Login</a></li>
+                <li><button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Mymodal">Login</button></li>
               </ul>
             </div>
           </nav>
@@ -214,35 +214,60 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;"> 
     <section id="contact" class="footer text-white ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div id="map" ></div>
-                        </div>
-                        <div class="col-md-6">
-                            <h1 class="ms-4">
-                                <b>Contact Us</b></h1>
-                                <ul class="DataPens">
-                                    <li> Jl. Raya ITS, Keputih, Kec. Sukolilo <br>
-                                    Surabaya - Jawa Timur - Indonesia</li>
-                                    <li>pens.ac.id</li>
-                                    <li>Telf (031) 5947280</li>
-                                </ul>
-                                <div class="icons-wrapper">
-                                    <i class="ri-instagram-line icon"></i>
-                                    <i class="ri-facebook-circle-line icon"></i>
-                                    <i class="ri-youtube-line icon"></i>
-                                </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <p class="copyright">Copyright © 2022 POLITEKNIK ELEKTRONIKA NEGERI SURABAYA</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+              <div id="map" ></div>
+          </div>
+          <div class="col-md-6">
+            <h1 class="ms-4">
+              <b>Contact Us</b>
+            </h1>
+              <ul class="DataPens">
+                <li> Jl. Raya ITS, Keputih, Kec. Sukolilo <br>
+                Surabaya - Jawa Timur - Indonesia</li>
+                <li>pens.ac.id</li>
+                <li>Telf (031) 5947280</li>
+              </ul>
+              <div class="icons-wrapper">
+                <i class="ri-instagram-line icon"></i>
+                <i class="ri-facebook-circle-line icon"></i>
+                <i class="ri-youtube-line icon"></i>
+              </div>
+          </div>
+          <div class="col-lg-12">
+            <p class="copyright">Copyright © 2022 POLITEKNIK ELEKTRONIKA NEGERI SURABAYA</p>
+          </div>
+        </div>
+      </div>
     </section>
   </footer>
+
+<div class="modal" id="Mymodal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <a href="{{ url('/login') }}" class="btn btn-secondary d-block mb-2 w-100">
+          <i class="bi bi-person-check-fill"></i>
+          P3M
+        </a>
+        <a href="{{ url('/login') }}" class="btn btn-primary d-block mb-2 w-100">
+          <i class="bi bi-person-fill"></i>
+          Dosen
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
      <!-- Optional JavaScript; choose one of the two! -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/bs.js') }}"></script>
+    <script src="{{ asset('js/jquery.js') }}"></script>
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="

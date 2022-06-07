@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Data Pengmas</title>
     <link rel="stylesheet" href="{{ asset('css/bs.css') }}">
-    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
     <style>
         .filter-hide {
             display: none
@@ -24,14 +24,6 @@
         </div>
     </div>
 </body>
-<script src="{{ asset('js/app.js') }}"></script>
-<script>
-    $("#filter-toggle").click(function() {
-        $("#filter").toggleClass("filter-hide")
-    });
-</script>
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="js/sb-admin-2.min.js"></script>
+<script src="{{ asset('js/jquery.js') }}"></script>
+<script src="{{ asset('js/bs.js') }}"></script>
 </html>
