@@ -214,31 +214,32 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;"> 
     <section id="contact" class="footer text-white ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div id="map" ></div>
-                        </div>
-                        <div class="col-md-6">
-                            <h1 class="ms-4">
-                                <b>Contact Us</b></h1>
-                                <ul class="DataPens">
-                                    <li> Jl. Raya ITS, Keputih, Kec. Sukolilo <br>
-                                    Surabaya - Jawa Timur - Indonesia</li>
-                                    <li>pens.ac.id</li>
-                                    <li>Telf (031) 5947280</li>
-                                </ul>
-                                <div class="icons-wrapper">
-                                    <i class="ri-instagram-line icon"></i>
-                                    <i class="ri-facebook-circle-line icon"></i>
-                                    <i class="ri-youtube-line icon"></i>
-                                </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <p class="copyright">Copyright © 2022 POLITEKNIK ELEKTRONIKA NEGERI SURABAYA</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+              <div id="map" ></div>
+          </div>
+          <div class="col-md-6">
+            <h1 class="ms-4">
+              <b>Contact Us</b>
+            </h1>
+              <ul class="DataPens">
+                <li> Jl. Raya ITS, Keputih, Kec. Sukolilo <br>
+                Surabaya - Jawa Timur - Indonesia</li>
+                <li>pens.ac.id</li>
+                <li>Telf (031) 5947280</li>
+              </ul>
+              <div class="icons-wrapper">
+                <i class="ri-instagram-line icon"></i>
+                <i class="ri-facebook-circle-line icon"></i>
+                <i class="ri-youtube-line icon"></i>
+              </div>
+          </div>
+          <div class="col-lg-12">
+            <p class="copyright">Copyright © 2022 POLITEKNIK ELEKTRONIKA NEGERI SURABAYA</p>
+          </div>
+        </div>
+      </div>
     </section>
   </footer>
 
@@ -250,14 +251,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <button type="button" class="btn btn-secondary d-block mb-2 w-100">
-        <i class="bi bi-person-check-fill"></i>
-        P3M
-        </button>
-        <button type="button" class="btn btn-primary d-block mb-2 w-100">
-        <i class="bi bi-person-fill"></i>
-        Dosen
-        </button>
+        <a href="{{ url('/login') }}" class="btn btn-secondary d-block mb-2 w-100">
+          <i class="bi bi-person-check-fill"></i>
+          P3M
+        </a>
+        <a href="{{ url('/login') }}" class="btn btn-primary d-block mb-2 w-100">
+          <i class="bi bi-person-fill"></i>
+          Dosen
+        </a>
       </div>
     </div>
   </div>
