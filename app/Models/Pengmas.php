@@ -41,6 +41,11 @@ class Pengmas extends Model
         ->wherePivot('ketua', 0);
     }
 
+    public function searchableAs()
+    {
+        return 'pengmas';
+    }
+
     public function toSearchableArray() {
         $pengmas = $this
         ->with('ketua:nip,nama_lengkap')
