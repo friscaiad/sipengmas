@@ -44,29 +44,60 @@ class TampilkanPengmasController extends Controller
         $departemen = $r->input('departemen');
 
         if(!empty($search)) {
-            $searhedPengmas = Pengmas::with(['periode', 
-            'ketua', 'anggota'])->whereFullText('judul', $search)
-            ->get();
-    
-            return redirect("/data")->with('pengmas', $searhedPengmas);
-        } else {
-            $filteredPengmas = Pengmas::with(['periode', 
-            'ketua', 'anggota']);
-
-            if (!empty($periode)) {
-                $filteredPengmas->where('periode_id', $periode);
+            $filteredPengmas = Pengmas::search($search);
+            
+            if(!empty($periode)) {
+                foreach ($periode as $p) {
+                    $filteredPengmas->where('periode.id', $p);
+                }
             }
 
             if(!empty($prodi)) {
-                $filteredPengmas->where('prodi_id', $prodi);
+                foreach ($prodi as $p) {
+                    $filteredPengmas->where('prodi.id', $p);
+                }
             }
 
             if(!empty($skema)) {
-                $filteredPengmas->where('skema_id', $skema);
+                foreach ($skema as $s) {
+                    $filteredPengmas->where('skema.id', $s);
+                }
             }
 
             if(!empty($departemen)) {
-                $filteredPengmas->where('departemen_id', $departemen);
+                foreach ($departemen as $d) {
+                    $filteredPengmas->where('departemen.id', $d);
+                }
+            }
+
+            return redirect("/data")
+            ->withInput()
+            ->with("pengmas", $filteredPengmas->get());
+        } else {
+            $filteredPengmas = Pengmas::search();
+            
+            if(!empty($periode)) {
+                foreach ($periode as $p) {
+                    $filteredPengmas->where('periode.id', $p);
+                }
+            }
+
+            if(!empty($prodi)) {
+                foreach ($prodi as $p) {
+                    $filteredPengmas->where('prodi.id', $p);
+                }
+            }
+
+            if(!empty($skema)) {
+                foreach ($skema as $s) {
+                    $filteredPengmas->where('skema.id', $s);
+                }
+            }
+
+            if(!empty($departemen)) {
+                foreach ($departemen as $d) {
+                    $filteredPengmas->where('departemen.id', $d);
+                }
             }
 
             return redirect("/data")
