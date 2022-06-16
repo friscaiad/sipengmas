@@ -7,6 +7,7 @@ Dependensi:
 2. composer
 3. nodejs 16.x.x
 4. Git
+5. meilisearch 0.27.1
 
 Menjalankan:
 
@@ -20,4 +21,6 @@ Menjalankan:
 8. `php artisan db:seed`
 9. `npm install`
 10. `npm run prod`
-11. `php artisan serve`
+11. `php artisan scout:import "App\Models\Pengmas"`
+12. `php indexm.php`
+13. `php artisan serve`
