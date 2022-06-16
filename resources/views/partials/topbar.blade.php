@@ -1,29 +1,30 @@
 <style>
-    .navcol {
-        background-color: rgba(121, 121, 121, 1);
+    .logo-stuff {
+        width: 45%;
     }
 
     .dropdown-menu.show {
         left: -100px;
     }
+
+    i.bi.bi-person-circle {
+        color: white;
+    }
 </style>
 
 <header>
-    <nav class="navbar navbar-expand-sm sticky-top navcol" style="position: fixed; width: 100%; z-index: 100 margin-left: 3px; margin-right: 3px;">
+    <nav class="navbar navbar-expand-sm sticky-top bg-primary" style="position: fixed; width: 100%; z-index: 100 margin-left: 3px; margin-right: 3px;">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">
-                <img src="{{ asset('images/siabdilogo.png') }}" alt="SIABDI">
+                <img src="{{ asset('images/siabdilogo2.png') }}" alt="SIABDI" class="logo-stuff">
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav navbar-kanan">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link text-white">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-nowrap">Data Pengmas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-nowrap">Contact Us</a>
+                        <a href="#" class="nav-link text-white text-nowrap">Data Pengmas</a>
                     </li>
                     <li class="nav-item dropdown">
                         <div class="dropdown">
