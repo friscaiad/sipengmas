@@ -26,7 +26,7 @@
 
     <section>
         <nav class="navbar fixed-top container1 bg-primary">
-            <img class="float-left img-fluid logo" src="{{ asset('images/siabdilogo3.png') }}" width="" ><a href=" landingpage"></a></img>
+            <img class="float-left img-fluid logo" src="/images/siabdilogo3.png" width=""/><a href="/"></a>
             <!-- The order that we place the checkbox and label here is important because we will use css only for the click event to open the menu on mobile. -->
             <input type="checkbox" id="toggler">
             <label for="toggler"><i class="ri-menu-line"></i></label>
@@ -62,12 +62,12 @@
         <div class="col-6">
             <div class="siabdi">
                 <h3 class="text-primary"><b> Hallo, Selamat Datang!</b></h3>
-                <img src="{{ asset('images/home/SIABDI.png') }}" width="25%" alt="">
+                <img src="/images/home/SIABDI.png" width="25%" alt="">
                 <h4 class="pt-4">SIABDI adalah sebuah sistem informasi yang memuat seluruh data pengabdian masyarakat yang telah dilakukan oleh sivitas akademika Politeknik Elektronika Negeri Surabaya. SIABDI bertujuan untuk mempermudah dan mempercepat proses pengelolaan data oleh dosen juga P3M PENS</h4>
             </div>
         </div>
         <div class="col-6">
-          <img src="{{ asset('images/home/images.jpg') }}" class="img" 
+          <img src="/images/home/images.jpg" class="img" 
           style=" box-sizing= border-box; background-color:rgba(11, 114, 158, 0.83); border= none; padding: 20px;" alt="">
         </div>
       </div>
@@ -81,7 +81,7 @@
         <div class="row berita-pengmas">
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="{{ asset('images/home/berita1.png') }}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="/images/home/berita1.png" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
@@ -98,7 +98,7 @@
           </div>
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="{{ asset('images/home/berita1.png') }}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="/images/home/berita1.png" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
@@ -115,7 +115,7 @@
           </div>
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="{{asset('images/home/berita1.png')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="/images/home/berita1.png" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
@@ -132,7 +132,7 @@
           </div>
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="{{asset('images/home/berita1.png')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="/images/home/berita1.png" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
@@ -149,7 +149,7 @@
           </div>
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="{{asset('images/home/berita1.png')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="/images/home/berita1.png" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
@@ -174,32 +174,32 @@
         <div class="row pt-4">
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+              <img src="/images/home/banner1.jpg" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+              <img src="/images/home/banner1.jpg" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+              <img src="/images/home/banner1.jpg" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+              <img src="/images/home/banner1.jpg" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+              <img src="/images/home/banner1.jpg" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+              <img src="/images/home/banner1.jpg" width="100%" alt="">
             </div>
           </div>
         </div>
