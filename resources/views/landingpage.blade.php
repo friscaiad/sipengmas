@@ -46,7 +46,7 @@
 
     <header style="padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background: linear-gradient(to bottom, rgba(5, 67, 94, 0), rgba(5, 67, 94, 0.83));
+    background: linear-gradient(to bottom, rgba(5, 67, 94, 0), rgba(11, 114, 158, 0.83));
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
