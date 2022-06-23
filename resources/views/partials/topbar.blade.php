@@ -16,16 +16,16 @@
     <nav class="navbar navbar-expand-sm sticky-top bg-primary" style="position: fixed; width: 100%; z-index: 100 margin-left: 3px; margin-right: 3px;">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">
-                <img src="{{ asset('images/siabdilogo2.png') }}" alt="SIABDI" class="logo-stuff">
+                <img src="{{ asset('images/siabdilogo3.png') }}"  width="120px" alt="SIABDI" >
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav navbar-kanan">
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a href="#" class="nav-link text-white">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link text-white text-nowrap">Data Pengmas</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item dropdown">
                         <div class="dropdown">
                             <button 

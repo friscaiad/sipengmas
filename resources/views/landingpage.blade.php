@@ -28,7 +28,7 @@
 
     <section>
         <nav class="navbar fixed-top container1 bg-primary">
-            <img class="float-left img-fluid logo" src="{{ asset('images/siabdilogo2.png') }}" width="90-px" ><a href=" landingpage"></a></img>
+            <img class="float-left img-fluid logo" src="{{ asset('images/siabdilogo3.png') }}" width="" ><a href=" landingpage"></a></img>
             <!-- The order that we place the checkbox and label here is important because we will use css only for the click event to open the menu on mobile. -->
             <input type="checkbox" id="toggler">
             <label for="toggler"><i class="ri-menu-line"></i></label>
@@ -254,7 +254,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title">Login</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
