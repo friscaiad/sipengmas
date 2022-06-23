@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/bs.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/> 
+    <link rel="stylesheet" href="{{ asset('css/leaflet.css') }}"> 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">  
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <style>
@@ -276,9 +274,7 @@
     <script src="{{ asset('js/bs.js') }}"></script>
     <script src="{{ asset('js/jquery.js') }}"></script>
     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
+    <script src="{{ asset('js/map.js') }}"></script>
 
     <script>
         let load;
@@ -289,25 +285,6 @@
             document.getElementById('loading').style.display = "none"
         }
     </script>
-
-    <script>
-        const map = L.map('map').setView([-7.275644888212839, 112.7938093406499], 12);
-
-        const tiles = L.tileLayer(
-        "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
-        {
-          maxZoom: 18,
-          attribution:
-            'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
-            'Imagery ©️ <a href="https://www.mapbox.com/">Mapbox</a>',
-          id: "mapbox/streets-v11",
-          tileSize: 512,
-          zoomOffset: -1,
-        }
-      ).addTo(map);
-      var marker = L.marker([-7.275644888212839, 112.7938093406499]).addTo(map);
-      marker.bindPopup("<b>PENS</b>").openPopup();
-	</script>
 
 </body>
 </html>
