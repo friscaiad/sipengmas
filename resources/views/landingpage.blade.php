@@ -56,8 +56,7 @@
       <div class="row">
         <div class="col-6">
             <div class="siabdi">
-                <h3 class="text"><b> Hallo, Selamat Datang!</b></h3>
-                <img src="{{ asset('images/home/SIABDI.png') }}" width="25%" alt="">
+                <h3><b> Hallo, Selamat Datang!</b></h3>
                 <h4 class="pt-4" >SIABDI adalah sebuah sistem informasi yang memuat seluruh data pengabdian masyarakat yang telah dilakukan oleh sivitas akademika Politeknik Elektronika Negeri Surabaya. SIABDI bertujuan untuk mempermudah dan mempercepat proses pengelolaan data oleh dosen juga P3M PENS</h4>
             </div>
         </div>

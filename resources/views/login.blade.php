@@ -17,7 +17,7 @@
           <div class="card" style="border-radius: 1rem;">
             <div class="row g-0">
               <div class="col-md-6 col-lg-5 d-none d-md-block">
-                <img src="{{ asset('images/login/pensup.jpg') }}"
+                <img href='#about' src="{{ asset('images/login/pensup.jpg') }}"
                   alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; height: 100%;" />
               </div>
               <div class="col-md-6 col-lg-7 d-flex align-items-center">
