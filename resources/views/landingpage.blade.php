@@ -27,26 +27,33 @@
     </section>
 
     <section>
-        <nav class="navbar fixed-top container1">
-            <img class="float-left img-fluid logo" src="{{ asset('images/home/SIABDI.jpg') }}" width="90-px" ><a href=" landingpage"></a></img>
+        <nav class="navbar fixed-top container1 bg-primary">
+            <img class="float-left img-fluid logo" src="{{ asset('images/siabdilogo2.png') }}" width="90-px" ><a href=" landingpage"></a></img>
             <!-- The order that we place the checkbox and label here is important because we will use css only for the click event to open the menu on mobile. -->
             <input type="checkbox" id="toggler">
             <label for="toggler"><i class="ri-menu-line"></i></label>
             <div class="menu">
               <ul class="list">
-                <li><a href="#about">Home</a></li>
-                <li><a href="#Berita">Berita</a></li>
-                <li><a href="#dokumen">Dokumentasi</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Mymodal">Login</button></li>
+                <li><a href="#about" class="text-white">Home</a></li>
+                <li><a href="#Berita" class="text-white">Berita</a></li>
+                <li><a href="#dokumen" class="text-white">Dokumentasi</a></li>
+                <li><a href="#contact" class="text-white">Contact</a></li>
+                <li><button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#Mymodal">Login</button></li>
               </ul>
             </div>
           </nav>
     </section>
 
+    {{-- <header style="padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(5, 67, 94, 0), rgba(0, 56, 153, 1));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;"> --}}
+
     <header style="padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background: linear-gradient(to bottom, rgba(5, 67, 94, 0), rgba(11, 114, 158, 0.83));
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -56,8 +63,9 @@
       <div class="row">
         <div class="col-6">
             <div class="siabdi">
-                <h3><b> Hallo, Selamat Datang!</b></h3>
-                <h4 class="pt-4" >SIABDI adalah sebuah sistem informasi yang memuat seluruh data pengabdian masyarakat yang telah dilakukan oleh sivitas akademika Politeknik Elektronika Negeri Surabaya. SIABDI bertujuan untuk mempermudah dan mempercepat proses pengelolaan data oleh dosen juga P3M PENS</h4>
+                <h3 class="text-primary"><b> Hallo, Selamat Datang!</b></h3>
+                <img src="{{ asset('images/home/SIABDI.png') }}" width="25%" alt="">
+                <h4 class="pt-4">SIABDI adalah sebuah sistem informasi yang memuat seluruh data pengabdian masyarakat yang telah dilakukan oleh sivitas akademika Politeknik Elektronika Negeri Surabaya. SIABDI bertujuan untuk mempermudah dan mempercepat proses pengelolaan data oleh dosen juga P3M PENS</h4>
             </div>
         </div>
         <div class="col-6">
