@@ -91,6 +91,10 @@ class PegawaiSeeder extends Seeder
             [
                 'nip' => '10018', 'nama_lengkap' => 'Andik',
                 'role_id' => 2, 'email' => $faker->email, 'password' => Hash::make('1111')
+            ],
+            [
+                'nip' => '10019', 'nama_lengkap' => 'admin',
+                'role_id' => 2, 'email' => 'admin@admin.com', 'password' => Hash::make('admin')
             ]
         ]);
     }
