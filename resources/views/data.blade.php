@@ -33,7 +33,9 @@
                                     <th>{{ $i + 1 }}</th>
                                     <th>{{ $p->judul }}</th>
                                     <th>
-                                        {{ $p->ketua()->first()->nama_lengkap }}
+                                        @foreach ($p->ketua as $k)
+                                            {{ $k->nama_lengkap }}
+                                        @endforeach
                                     </th>
                                     <th>
                                         <ul>
