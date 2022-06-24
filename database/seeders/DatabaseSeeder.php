@@ -19,10 +19,10 @@ class DatabaseSeeder extends Seeder
         $pers = new PeriodeSeeder();
         $s = new SkemaSeeder();
         $r = new RoleSeeder();
+        $pes = new PegawaiSeeder();
 
         // import manually from csv
 
-        // $pes = new PegawaiSeeder();
         // $pens = new PengmasSeeder();
         // $dps = new DaftarPengmasSeeder();
 
@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
         $pers->run();
         $s->run();
         $r->run();
-        // $pes->run();
+        $pes->run();
         // $pens->run();
         // $dps->run();
     }
