@@ -28,7 +28,7 @@
 
     <section>
         <nav class="navbar fixed-top container1 bg-primary">
-            <img class="float-left img-fluid logo" src="{{ asset('images/siabdilogo3.png') }}" width="120-px" ><a href="about"></a></img>
+            <a href="#about"><img class="float-left img-fluid logo" src="{{ asset('images/siabdilogo3.png') }}" width="120-px" ></img></a>
             <!-- The order that we place the checkbox and label here is important because we will use css only for the click event to open the menu on mobile. -->
             <input type="checkbox" id="toggler">
             <label for="toggler"><i class="ri-menu-line"></i></label>
@@ -82,86 +82,86 @@
         <div class="row berita-pengmas">
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="{{ asset('images/home/berita1.png') }}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="{{ asset('images/home/belajarmengajar.jpg') }}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
               </div>
               <figcaption class="figure-caption">
                 <div class="heading">
-                  <div class="name">Berita 1</div>
+                  <div class="name">Belajar Mengajar</div>
                   <div class="duration">
                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0VGRjRGNyIgZD0iTTE3LjYgMTAuNWMwIDMuODY2LTMuMTM0IDctNyA3cy03LTMuMTM0LTctNyAzLjEzNC03IDctNyA3IDMuMTM0IDcgNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS40IDEuNSkiLz4KICAgICAgICA8cGF0aCBzdHJva2U9IiMyMDJENTAiIGQ9Ik0xNi41IDguNWMwIDQuNDE4LTMuNTgyIDgtOCA4cy04LTMuNTgyLTgtOCAzLjU4Mi04IDgtOCA4IDMuNTgyIDggOHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICAgICAgPHBhdGggc3Ryb2tlPSIjMjAyRDUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik04LjUgNC41TDguNSA4LjUgMTIuNSA4LjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="clock" class=""> 33 Mins</div>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel ratione at eum molestiae perferendis nobis. Hic dolorum, libero earum sunt error, odio non optio quaerat reiciendis eius vel aliquid.</p>
+                  <p>Kegiatan mengajar yang dilakukan oleh para mahasiswa PENS kepada murid-murid di SD dan SMP di Dusun Kepetingan. Dimana kegiatan ini dilakukan untuk memberikan pelajaran dasar kepada murid-murid, dan sebagai pengganti sementara oleh guru" yang ada di sana.</p>
                 </figcaption>
             </figure>
           </div>
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="{{ asset('images/home/berita1.png') }}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="{{ asset('images/home/bersihmasjid.jpg') }}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
               </div>
               <figcaption class="figure-caption">
                 <div class="heading">
-                  <div class="name">Berita 1</div>
+                  <div class="name">Bersih Masjid</div>
                   <div class="duration">
                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0VGRjRGNyIgZD0iTTE3LjYgMTAuNWMwIDMuODY2LTMuMTM0IDctNyA3cy03LTMuMTM0LTctNyAzLjEzNC03IDctNyA3IDMuMTM0IDcgNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS40IDEuNSkiLz4KICAgICAgICA8cGF0aCBzdHJva2U9IiMyMDJENTAiIGQ9Ik0xNi41IDguNWMwIDQuNDE4LTMuNTgyIDgtOCA4cy04LTMuNTgyLTgtOCAzLjU4Mi04IDgtOCA4IDMuNTgyIDggOHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICAgICAgPHBhdGggc3Ryb2tlPSIjMjAyRDUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik04LjUgNC41TDguNSA4LjUgMTIuNSA4LjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="clock" class=""> 33 Mins</div>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni id voluptatibus placeat vero obcaecati incidunt necessitatibus vel earum, neque, non odit distinctio odio quod doloremque sunt, alias animi quis?</p>
+                  <p>Kegiatan bersih-bersih masjid yang dilakukan oleh para mahasiswa PENS dan masyarakat Dusun Kepetingan yang sedang melakukan pengabdian masyarakat. Dimana kegiatan ini untuk membantu masyarakat sekitar dalam hal menjaga kebersihan masjid</p>
                 </figcaption>
             </figure>
           </div>
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="{{asset('images/home/berita1.png')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="{{asset('images/home/pentasseni.jpg')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
               </div>
               <figcaption class="figure-caption">
                 <div class="heading">
-                  <div class="name">Berita 1</div>
+                  <div class="name">Pentas Seni</div>
                   <div class="duration">
                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0VGRjRGNyIgZD0iTTE3LjYgMTAuNWMwIDMuODY2LTMuMTM0IDctNyA3cy03LTMuMTM0LTctNyAzLjEzNC03IDctNyA3IDMuMTM0IDcgNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS40IDEuNSkiLz4KICAgICAgICA8cGF0aCBzdHJva2U9IiMyMDJENTAiIGQ9Ik0xNi41IDguNWMwIDQuNDE4LTMuNTgyIDgtOCA4cy04LTMuNTgyLTgtOCAzLjU4Mi04IDgtOCA4IDMuNTgyIDggOHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICAgICAgPHBhdGggc3Ryb2tlPSIjMjAyRDUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik04LjUgNC41TDguNSA4LjUgMTIuNSA4LjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="clock" class=""> 33 Mins</div>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt necessitatibus velit facilis commodi qui maiores nihil, pariatur, laborum eligendi aliquid repellat delectus iusto neque aliquam! Enim, rem. Accusamus, quod hic?</p>
+                  <p>Kegiatan pentas seni yang dimana untuk pesertanya dari teman teman SD dan SMP yang berada di Dusun Kepetingan. Kegiatan ini dilakukan di malam terakhir pengabdian, tujuan nya untuk saling memperat antar warga yang ada pada Dusun Kepetingan dan juga mahasiswa PENS. Selain itu juga memberikan kesan berpisah, karena dimana ada pertemuan disitu ada perpisahan.</p>
                 </figcaption>
             </figure>
           </div>
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="{{asset('images/home/berita1.png')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="{{asset('images/home/senampagi.jpg')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
               </div>
               <figcaption class="figure-caption">
                 <div class="heading">
-                  <div class="name">Berita 1</div>
+                  <div class="name">Senam Pagi</div>
                   <div class="duration">
                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0VGRjRGNyIgZD0iTTE3LjYgMTAuNWMwIDMuODY2LTMuMTM0IDctNyA3cy03LTMuMTM0LTctNyAzLjEzNC03IDctNyA3IDMuMTM0IDcgNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS40IDEuNSkiLz4KICAgICAgICA8cGF0aCBzdHJva2U9IiMyMDJENTAiIGQ9Ik0xNi41IDguNWMwIDQuNDE4LTMuNTgyIDgtOCA4cy04LTMuNTgyLTgtOCAzLjU4Mi04IDgtOCA4IDMuNTgyIDggOHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICAgICAgPHBhdGggc3Ryb2tlPSIjMjAyRDUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik04LjUgNC41TDguNSA4LjUgMTIuNSA4LjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="clock" class=""> 33 Mins</div>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illo, molestias praesentium odio distinctio fugit magni ullam at consequuntur blanditiis eum quia, nostrum, quo et omnis molestiae delectus inventore laborum!</p>
+                  <p>Kegiatan senam pagi yang dilakukan oleh para mahasiswa PENS dan ibu-ibu di Dusun Kepetingan Yang sedang melakukan pengabdian masyarakat. Dimana kegiatan ini untuk membantu masyarakat dalam hal menjaga kesehatan jasmani, apalagi diwaktu musim pandemi, yang disarankan untuk menjaga kesehatan</p>
                 </figcaption>
             </figure>
           </div>
           <div class="col-md-4">
             <figure class="course-card figure">
-              <img id="img-design" src="{{asset('images/home/berita1.png')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
+              <img id="img-design" src="{{asset('images/home/balapsarung.jpg')}}" class="figure-image img-fluid" style="background-color: rgb(219, 221, 255)" alt="">
               <div class="badge">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMzkuODU0TDcuNzIyIDMuNjhjLjA2My4xMzUuMTg2LjIyOC4zMjcuMjVsMi45NzguNDUzYy4zNTcuMDU0LjUuNTEzLjI0MS43NzdMOS4xMTQgNy4zNThjLS4xMDMuMTA1LS4xNS4yNTUtLjEyNi40MDNsLjUxIDMuMTA1Yy4wNi4zNzMtLjMxMy42NTYtLjYzMi40OEw2LjIwMiA5Ljg4MmMtLjEyNi0uMDctLjI3OC0uMDctLjQwNCAwbC0yLjY2NCAxLjQ2NmMtLjMxOS4xNzUtLjY5Mi0uMTA4LS42MzEtLjQ4bC41MDktMy4xMDZjLjAyNC0uMTQ4LS4wMjMtLjI5OC0uMTI2LS40MDNsLTIuMTU0LTIuMmMtLjI1OC0uMjYzLS4xMTYtLjcyMi4yNC0uNzc2bDIuOTc5LS40NTRjLjE0MS0uMDIxLjI2NC0uMTE0LjMyNy0uMjQ5TDUuNjEuODU0Yy4xNi0uMzM5LjYyLS4zMzkuNzggMCIvPgo8L3N2Zz4K" alt="star" class="">
                 "Most Popular"
               </div>
               <figcaption class="figure-caption">
                 <div class="heading">
-                  <div class="name">Berita 1</div>
+                  <div class="name">Balap Sarung</div>
                   <div class="duration">
                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0VGRjRGNyIgZD0iTTE3LjYgMTAuNWMwIDMuODY2LTMuMTM0IDctNyA3cy03LTMuMTM0LTctNyAzLjEzNC03IDctNyA3IDMuMTM0IDcgNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS40IDEuNSkiLz4KICAgICAgICA8cGF0aCBzdHJva2U9IiMyMDJENTAiIGQ9Ik0xNi41IDguNWMwIDQuNDE4LTMuNTgyIDgtOCA4cy04LTMuNTgyLTgtOCAzLjU4Mi04IDgtOCA4IDMuNTgyIDggOHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICAgICAgPHBhdGggc3Ryb2tlPSIjMjAyRDUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik04LjUgNC41TDguNSA4LjUgMTIuNSA4LjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuNCAxLjUpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=" alt="clock" class=""> 33 Mins</div>
                   </div>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias beatae a saepe doloribus vitae corrupti laborum molestiae porro quas, itaque nobis exercitationem earum harum quos neque similique necessitatibus, atque voluptate.</p>
+                  <p>Kegiatan perlombaan balap sarung yang dilakukan dengan siswa SD dan SMP yang ada pada Dusun Kepetingan untuk merekatkan hubungan antar siswa dan para mahasiswa PENS yang sedang melakukan pengabdian</p>
                 </figcaption>
             </figure>
           </div>
@@ -220,7 +220,7 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;"> 
-    <section id="contact" class="footer text-white ">
+    <section id="contact" class="footer text-white  ">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
