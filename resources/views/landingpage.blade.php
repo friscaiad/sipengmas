@@ -12,7 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <style>
         body {
-            font-family: 'Poppins';font-size: 22px;
+            font-family: 'Poppins';
         }
         </style>
     <title>Landing Page</title>
@@ -28,13 +28,12 @@
 
     <section>
         <nav class="navbar fixed-top container1 bg-primary">
-            <img class="float-left img-fluid logo" src="{{ asset('images/siabdilogo3.png') }}" width="" ><a href=" landingpage"></a></img>
+            <img class="float-left img-fluid logo" src="{{ asset('images/siabdilogo3.png') }}" width="120-px" ><a href="about"></a></img>
             <!-- The order that we place the checkbox and label here is important because we will use css only for the click event to open the menu on mobile. -->
             <input type="checkbox" id="toggler">
             <label for="toggler"><i class="ri-menu-line"></i></label>
             <div class="menu">
-              <ul class="list">
-                <li><a href="#about" class="text-white">Home</a></li>
+              <ul class="list" style="padding-top: 1rem" >
                 <li><a href="#Berita" class="text-white">Berita</a></li>
                 <li><a href="#dokumen" class="text-white">Dokumentasi</a></li>
                 <li><a href="#contact" class="text-white">Contact</a></li>
@@ -59,13 +58,13 @@
     background-attachment: scroll;
     background-size: cover;">
 
-    <div class="container">
+    <div id="about" class="container">
       <div class="row">
         <div class="col-6">
             <div class="siabdi">
                 <h3 class="text-primary"><b> Hallo, Selamat Datang!</b></h3>
                 <img src="{{ asset('images/home/SIABDI.png') }}" width="25%" alt="">
-                <h4 class="pt-4">SIABDI adalah sebuah sistem informasi yang memuat seluruh data pengabdian masyarakat yang telah dilakukan oleh sivitas akademika Politeknik Elektronika Negeri Surabaya. SIABDI bertujuan untuk mempermudah dan mempercepat proses pengelolaan data oleh dosen juga P3M PENS</h4>
+                <p style="font-size: 20px" class="pt-4">SIABDI adalah sebuah sistem informasi yang memuat seluruh data pengabdian masyarakat yang telah dilakukan oleh sivitas akademika Politeknik Elektronika Negeri Surabaya. SIABDI bertujuan untuk mempermudah dan mempercepat proses pengelolaan data oleh dosen juga P3M PENS</p>
             </div>
         </div>
         <div class="col-6">
@@ -181,22 +180,22 @@
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+              <img src="{{asset('images/home/banner2.jpg')}}" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+              <img src="{{asset('images/home/banner3.jpg')}}" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+              <img src="{{asset('images/home/banner4.jpg')}}" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
             <div class="dokumentasi-1">
-              <img src="{{asset('images/home/banner1.jpg')}}" width="100%" alt="">
+              <img src="{{asset('images/home/banner5.jpg')}}" width="100%" alt="">
             </div>
           </div>
           <div class="col-md-4">
