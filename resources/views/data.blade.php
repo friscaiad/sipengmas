@@ -3,7 +3,7 @@
             <div id="content" class="col-sm-8">
                 <form class="input-group mt-3 ml-2 mb-3" method="POST" action="{{ url('/data/filter') }}">
                     @csrf
-                    <input type="text" class="form-control" name="search" placeholder="cari berdasarkan nama">
+                    <input type="text" class="form-control" name="search" placeholder="Search Pengmas">
                     <button class="btn btn-outline-dark" type="submit">
                         <i class="bi bi-search"></i>
                     </button>
