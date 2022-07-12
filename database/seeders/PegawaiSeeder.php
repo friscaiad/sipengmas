@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
-use Faker\Factory as Faker;
 use Illuminate\Support\Facades\Hash;
 
 class PegawaiSeeder extends Seeder
@@ -16,7 +15,6 @@ class PegawaiSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create('id_ID');
         DB::table('pegawai')->insert([
             [
                 'nip' => '1001',
@@ -29,7 +27,7 @@ class PegawaiSeeder extends Seeder
                 'nip' => '1002',
                 'nama_lengkap' => 'Mike Yuliana', 
                 'role_id' => 1, 
-                'email' => $faker->email, 
+                'email' => 'mike@mail.com', 
                 'password' => Hash::make('mike')
             ],
             [
